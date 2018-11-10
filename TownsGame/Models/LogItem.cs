@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace TownsGame.Models
+namespace CityGame.Models
 {
-    public class StepGame
+    public class LogItem
     {
-        public string Town { get; set; }
+        public string CityName { get; set; }
 
         public string GamerName { get; set; }
-
-        public DateTime Date { get; set; }
     }
 }

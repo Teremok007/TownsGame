@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var item in Model.AnswerLog)
+            {
+                <li>@item.GamerName: @item.CityName</li>
+            }
+        </ul>
+        </div>
+        <div>
+            <form method="post">
+                @Html.ValidationSummary()
+                Название города: <input typeof="text" name="city" /><br />
+                Подпись: <input type="text" name="gamername" /><br />
+                <input type="submit" value="Отправить" />
+            </form>
+        </div>
+    </body>
+</html>
