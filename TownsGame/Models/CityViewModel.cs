@@ -56,10 +56,10 @@ namespace CityGame.Models
 
         private void CheckFirstLetter()
         {
-            char startLetter = Game.StartLetter(city[0]);
-            if (city?.First() != startLetter)
+            char lastLetter = Game.LastLetter(city[0]);
+            if (city?.First() != lastLetter)
             {
-                validList.Add(new ValidationResult($"Название города должно начинаться с буквы '{startLetter}'"));
+                validList.Add(new ValidationResult($"Название города должно начинаться с буквы '{lastLetter}'"));
             }
         }
         

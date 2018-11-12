@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CityGame.Models;
+using CityGame.DAL;
+
 
 namespace CityGame.Controllers
 {
     public class CityGameController : Controller
-    {
+    {        
         [HttpGet]
         public ActionResult Index()
         {
